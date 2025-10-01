@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Wicks Digital Solutions - Forge Your Digital Identity</title>
+    <meta name="description" content="Twin Wicks Digital Solutions - We forge digital identities that are as unique as your business. From sleek landing pages to comprehensive e-commerce platforms, we turn your digital dreams into reality.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://twin-wicks.com/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Twin Wicks Digital Solutions - Forge Your Digital Identity">
+    <meta property="og:description" content="We forge digital identities that are as unique as your business. From sleek landing pages to comprehensive e-commerce platforms, we turn your digital dreams into reality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://twin-wicks.com/">
+    <meta property="og:image" content="https://twin-wicks.com/assets/images/hero-visual.jpg">
+    <meta property="og:site_name" content="Twin Wicks Digital Solutions">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Twin Wicks Digital Solutions - Forge Your Digital Identity">
+    <meta name="twitter:description" content="We forge digital identities that are as unique as your business. Professional web development and digital marketing services.">
+    <meta name="twitter:image" content="https://twin-wicks.com/assets/images/hero-visual.jpg">
+    
+    <!-- Bing Webmaster Tools Verification -->
+    <meta name="msvalidate.01" content="867E4D114EAB0383C01467EB6FFA90D" />
+    
+    <link rel="icon" type="image/png" sizes="64x64" href="assets\images\Logo_Favicon.bmp">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js ) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EV19849YX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag( ){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2EV19849YX');
+    </script>
+    
+    <!-- Google Analytics Event Tracking -->
+    <script src="js/analytics-tracking.js"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Twin Wicks Digital Solutions",
+      "url": "https://twin-wicks.com",
+      "logo": "https://twin-wicks.com/assets/images/twin-wicks-logo.svg",
+      "description": "We forge digital identities that are as unique as your business. From sleek landing pages to comprehensive e-commerce platforms, we turn your digital dreams into reality.",
+      "foundingDate": "2019",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Tom Fenwick"
+        },
+        {
+          "@type": "Person", 
+          "name": "David Thompson"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-847-732-7324",
+        "contactType": "customer service",
+        "email": "support@twin-wicks.com",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://twin-wicks.com"
+      ],
+      "serviceType": [
+        "Website Design & Development",
+        "E-commerce Solutions", 
+        "SEO & Content Strategy",
+        "User Engagement Tools"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Solutions Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website Design & Development",
+              "description": "Tailored from simple landing pages to complex, feature-rich websites."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce Solutions",
+              "description": "Comprehensive online stores with secure payment processing and inventory management."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO & Content Strategy",
+              "description": "Strategic optimization to improve search rankings and drive organic traffic."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "User Engagement Tools",
+              "description": "Interactive features and analytics to enhance user experience and conversion rates."
+            }
+          }
+        ]
+      },
+      "openingHours": "Mo-Fr 16:00-20:00"
+    }
+    </script>
+    
+
+<style>
+    /* Updated Video Background Styles with corrected z-index */
+    .hero-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    }
+    
+    .hero-video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+    
+    /* Video overlay for better text readability */
+    .hero-video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        pointer-events: none;
+    }
+    
+    /* Fallback background image - starts visible */
+    .hero-video-fallback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('assets/images/hero-visual.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -3;
+        display: block;
+    }
+
+    /* Hide fallback image when video loads */
+    .hero-video-background video[loadedmetadata] ~ .hero-video-fallback {
+        display: none;
+    }
+    
+    /* Modify hero section to accommodate video */
+    .hero {
+        background: none !important;
+        position: relative;
+    }
+    
+    .hero::before {
+        display: none;
+    }
+    
+    /* Ensure content is above everything */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+            height: 100%;
+    }
+    
+    .hero-visual {
+        position: relative;
+        z-index: 10;
+    }
+    
+    /* Enhance text visibility */
+    .hero-title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    /* Fixed CSS syntax error */
+    .hero-description {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+</style>
+
+<script>
+// Video Background Handler with Error Handling
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.hero-video-background video');
+    const videoContainer = document.querySelector('.hero-video-background');
+    const fallback = document.querySelector('.hero-video-fallback');
+    
+    if (video && fallback && videoContainer) {
+        console.log('Initializing video background...');
+        
+        // Show fallback initially
+        fallback.style.display = 'block';
+        videoContainer.style.opacity = '0';
+        
+        // Handle successful video load
+        video.addEventListener('loadeddata', function() {
+            console.log('Video loaded successfully');
+            fallback.style.display = 'none';
+            videoContainer.style.opacity = '1';
+        });
+        
+        // Handle video loading errors
+        video.addEventListener('error', function(e) {
+            console.log('Video failed to load:', e);
+            fallback.style.display = 'block';
+            videoContainer.style.display = 'none';
+        });
+        
+        // Handle video play errors
+        video.addEventListener('loadstart', function() {
+            console.log('Video loading started...');
+        });
+        
+        // Force play attempt (some browsers need this)
+        const playPromise = video.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(function() {
+                console.log('Video autoplay started successfully');
+            }).catch(function(error) {
+                console.log('Autoplay failed:', error);
+                // Keep fallback visible if autoplay fails
+                fallback.style.display = 'block';
+                videoContainer.style.opacity = '0';
+            });
+        }
+        
+        // Optional: Mobile detection to save data
+        const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            console.log('Mobile device detected - using fallback image');
+            videoContainer.style.display = 'none';
+            fallback.style.display = 'block';
+        }
+        
+        // Timeout fallback - if video doesn't load within 5 seconds, show image
+        setTimeout(function() {
+            if (video.readyState < 2) { // HAVE_CURRENT_DATA
+                console.log('Video loading timeout - showing fallback');
+                fallback.style.display = 'block';
+                videoContainer.style.opacity = '0';
+            }
+        }, 5000);
+    }
+});
+</script>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/twin-wicks-logo.svg" alt="Twin Wicks Digital Solutions" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link cta-button">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <!-- Video Background -->
+        <div class="hero-video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/Hero Video.mp4" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Video Overlay for better text readability -->
+        <div class="hero-video-overlay"></div>
+        
+        <!-- Fallback background image -->
+        <div class="hero-video-fallback"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">PROFESSIONAL DIGITAL SOLUTIONS</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Forge Your Digital Identity</span>
+                </h1>
+                <p class="hero-description">
+                    Welcome to Twin Wicks Digital Solutions, where we turn your digital dreams into reality. From sleek landing pages to comprehensive e-commerce platforms, we don't just build exceptional websites; we forge digital identities that are as unique as your business.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Removed hero image and floating elements -->
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Our Promise</h2>
+                <p class="section-description">
+                    At Twin Wicks Digital Solutions, we don't just build exceptional websites; we forge digital identities that are as unique as your business.
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>Customization</h3>
+                            <p>Your brand, your rules. We build to your specifications, ensuring every element reflects your unique identity and business goals.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>Innovation</h3>
+                            <p>Always at the forefront of web technology, ensuring your site stays ahead of the competition with cutting-edge solutions.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>Support</h3>
+                            <p>From launch to growth, we provide comprehensive support and maintenance to ensure your digital success continues.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="assets/images/Tom Fenwick Headshot.png" alt="Tom Fenwick" loading="lazy">
+                            </div>
+                            <h4>Tom Fenwick</h4>
+                            <span>Lead Developer</span>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="assets/images/David Headshot (1).png" alt="David Thompson" loading="lazy">
+                            </div>
+                            <h4>David Thompson</h4>
+                            <span>SEO Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Comprehensive Digital Solutions</h2>
+                <p class="section-description">
+                    From concept to launch and beyond, our services span the full spectrum of digital excellence.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Website Design & Development</h3>
+                    <p>Tailored from simple landing pages to complex, feature-rich websites that reflect your unique brand identity.</p>
+                    <ul class="service-features">
+                        <li>Custom Design</li>
+                        <li>Responsive Development</li>
+                        <li>Brand Integration</li>
+                        <li>Fast Loading</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Seamless online stores with secure transactions and inventory management that drive sales and growth.</p>
+                    <ul class="service-features">
+                        <li>Secure Payments</li>
+                        <li>Inventory Management</li>
+                        <li>Mobile Optimized</li>
+                        <li>Order Processing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO & Content Strategy</h3>
+                    <p>Enhancing visibility and engagement through optimized content and Search Engine Optimization.</p>
+                    <ul class="service-features">
+                        <li>Keyword Research</li>
+                        <li>Content Creation</li>
+                        <li>Technical SEO</li>
+                        <li>Analytics Tracking</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>User Engagement Tools</h3>
+                    <p>Integrate blogs, chatbots, and mobile-optimized views for a dynamic user experience.</p>
+                    <ul class="service-features">
+                        <li>Chatbot Integration</li>
+                        <li>Blog Development</li>
+                        <li>Mobile Views</li>
+                        <li>Interactive Features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Explore our portfolio of successful projects that showcase our expertise and creativity.
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-ecommerce.png" alt="Your Urban Lifestyle E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Urban Lifestyle</h3>
+                                <p>Complete e-commerce solution with custom CMS</p>
+                                <div class="portfolio-tags">
+                                    <span>E-commerce</span>
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-corporate.png" alt="TeckStart Corporate Website" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>TeckStart STEM Ed</h3>
+                                <p>Modern corporate website with CRM integration</p>
+                                <div class="portfolio-tags">
+                                    <span>Corporate</span>
+                                    <span>WordPress</span>
+                                    <span>CRM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-healthcare.png" alt="MediCare Connect Healthcare Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>MediCare Connect</h3>
+                                <p>Healthcare platform with patient portal</p>
+                                <div class="portfolio-tags">
+                                    <span>Healthcare</span>
+                                    <span>Patient Portal</span>
+                                    <span>HIPAA Compliant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio-restaurant.png" alt="Bella Vista Restaurant Website" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Bella Vista Restaurant</h3>
+                                <p>Restaurant website with online ordering system</p>
+                                <div class="portfolio-tags">
+                                    <span>Restaurant</span>
+                                    <span>Online Ordering</span>
+                                    <span>Mobile App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Twin Wicks Consulting transformed our online presence completely. Our new website not only looks amazing but has increased our leads by 300%. The team's attention to detail and understanding of our business needs was exceptional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/testimonial-sarah.jpg" alt="Sarah Johnson" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, TechStart Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with Twin Wicks was a game-changer for our restaurant. The online ordering system they built has streamlined our operations and our customers love the seamless experience. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/testimonial-michael.jpg" alt="Michael Rodriguez" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <span>Owner, Bella Vista Restaurant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The e-commerce platform Twin Wicks built for us exceeded all expectations. Sales have increased by 250% since launch, and the admin panel makes managing our inventory a breeze. Professional service from start to finish."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/images/testimonial-emily.jpg" alt="Emily Chen" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Chen</h4>
+                            <span>Founder, Urban Lifestyle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Ready to Start Your Project?</h2>
+                <p class="section-description">
+                    Let's discuss how we can help elevate your online presence and drive your business forward.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>support@twin-wicks.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (847) 732-7324</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Mon - Fri: 4PM - 8PM CST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="website-design-development">Website Design & Development</option>
+                                <option value="ecommerce-solutions">E-commerce Solutions</option>
+                                <option value="seo-content-strategy">SEO & Content Strategy</option>
+                                <option value="user-engagement-tools">User Engagement Tools</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Twin Wicks</h3>
+                        <span>Digital Solutions</span>
+                    </div>
+                    <p>Forging digital identities that are as unique as your business. We turn your digital dreams into reality.</p>
+                    <!-- Social media links commented out temporarily
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    -->
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Website Design</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">eCommerce Solutions</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> support@twin-wicks.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (847) 732-7324</p>
+                        <p><i class="fas fa-clock"></i> Mon - Fri: 4PM - 8PM CST</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Twin Wicks Digital Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-fixed.js"></script>
+    <!-- Contact Form Integration -->
+    <script>
+        // Contact Form Handler for Twin Wicks Digital Solutions
+        class ContactFormHandler {
+            constructor(apiEndpoint) {
+                this.apiEndpoint = apiEndpoint;
+                this.form = document.getElementById('contactForm');
+                this.submitButton = this.form.querySelector('button[type="submit"]');
+                this.originalButtonText = this.submitButton.textContent;
+                
+                this.init();
+            }
+
+            init() {
+                this.form.addEventListener('submit', this.handleSubmit.bind(this));
+            }
+
+            async handleSubmit(event) {
+                event.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(this.form);
+                const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    service: formData.get('service'),
+                    message: formData.get('message')
+                };
+
+                // Validate required fields
+                if (!data.name || !data.email || !data.message) {
+                    this.showMessage('Please fill in all required fields.', 'error');
+                    return;
+                }
+
+                // Validate email format
+                if (!this.isValidEmail(data.email)) {
+                    this.showMessage('Please enter a valid email address.', 'error');
+                    return;
+                }
+
+                try {
+                    await this.submitForm(data);
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    this.showMessage('Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
+                }
+            }
+
+            async submitForm(data) {
+                // Show loading state
+                this.setLoadingState(true);
+
+                try {
+                    const response = await fetch(`${this.apiEndpoint}/contact`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        // Track successful contact form submission in Google Analytics
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'form_submit', {
+                                'event_category': 'Contact',
+                                'event_label': 'Contact Form',
+                                'value': 1
+                            });
+                        }
+                        
+                        this.showMessage('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
+                        this.form.reset();
+                    } else {
+                        throw new Error(result.error || 'Failed to send message');
+                    }
+                } finally {
+                    this.setLoadingState(false);
+                }
+            }
+
+            setLoadingState(loading) {
+                if (loading) {
+                    this.submitButton.disabled = true;
+                    this.submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                } else {
+                    this.submitButton.disabled = false;
+                    this.submitButton.textContent = this.originalButtonText;
+                }
+            }
+
+            showMessage(message, type) {
+                // Remove any existing messages
+                const existingMessage = this.form.querySelector('.form-message');
+                if (existingMessage) {
+                    existingMessage.remove();
+                }
+
+                // Create new message element
+                const messageElement = document.createElement('div');
+                messageElement.className = `form-message form-message-${type}`;
+                messageElement.textContent = message;
+                messageElement.setAttribute('role', 'alert');
+
+                // Insert message before the submit button
+                this.submitButton.parentNode.insertBefore(messageElement, this.submitButton);
+
+                // Auto-remove success messages after 5 seconds
+                if (type === 'success') {
+                    setTimeout(() => {
+                        if (messageElement.parentNode) {
+                            messageElement.remove();
+                        }
+                    }, 5000);
+                }
+            }
+
+            isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        }
+
+        // Initialize the contact form handler when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const API_ENDPOINT = 'https://hzvgdrzqx5.execute-api.us-east-2.amazonaws.com/prod';
+            
+            // Check if the contact form exists on the page
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                new ContactFormHandler(API_ENDPOINT);
+            }
+        });
+    </script>
+</body>
+</html>
+
